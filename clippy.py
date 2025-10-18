@@ -51,15 +51,10 @@ def start_typing():
         messagebox.showwarning("Empty Clipboard", "Clipboard is empty!")
         return
 
-    countdown_label.config(text="Typing now...")
+    countdown_label.config(text="Typing at GODSPEED ⚡")
 
-    # Simulate typing slowly
-    for char in text:
-        if stop_typing_flag:
-            countdown_label.config(text="Typing stopped.")
-            return
-        pyautogui.typewrite(char)
-        time.sleep(0.03)  # Adjust typing speed
+    # Type as fast as possible
+    pyautogui.typewrite(text, interval=0)  # interval=0 → maximum speed
 
     countdown_label.config(text="✅ Done typing!")
 
