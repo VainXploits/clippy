@@ -4,7 +4,7 @@ import pyautogui
 import pyperclip
 import tkinter as tk
 from tkinter import messagebox
-
+#hi
 # Global flag to control typing
 stop_typing_flag = False
 
